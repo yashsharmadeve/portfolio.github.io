@@ -1,0 +1,1772 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box; 
+}
+
+/* ========== Fonts =========== */
+@font-face {
+    font-family: preg;
+    src: url('../Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+    font-family: pbold;
+    src: url('../Poppins/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: psemib;
+    src: url('../Poppins/Poppins-SemiBold.ttf');
+}
+
+
+/*========== universal ======== */
+
+ul li{
+    list-style-type: none;
+}
+a, a:focus ,a:hover{
+    text-decoration: none;
+}
+.bor{border: 1px solid black;}
+
+body{
+	overflow-y: scroll;
+    overflow-x: hidden!important;
+}
+
+
+/*======== navigation ======== */
+
+#nav-container{
+    display: flex; align-items: center;
+    padding: 0 13%; margin-top: 50px;
+}#nav-container .nav-logo{
+    font-family: pbold;
+    font-size: 30px;
+    font-weight: bold; color: rgb(36, 47, 81);
+}.nav-logo span{color: rgb(252, 174, 97);}
+#nav-container ul{
+    margin: 0; margin-left: auto;
+}#nav-container ul li{
+    display: inline-block;
+    font-size: 16px;
+    color: rgb(36, 47, 81); font-family: preg;
+    margin-right: 20px;
+}#nav-container ul li:last-child{
+    margin-right: 0;
+    margin-left: 10px;
+}#nav-container ul li a{
+    color: rgb(36, 47, 81);/* font-weight: bold; */
+}#nav-container ul li button{
+    font-family: pbold; color: white;
+    font-weight: bold; font-size: 16px;
+    background-color: rgb(37, 0, 249); width: 170px; border: none;
+    height: 57px; border-radius: 26px; letter-spacing: 2px;
+    transition: .5s all ease;
+}#nav-container ul li button:hover{
+    color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+}
+#nav-container ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(36,47,81);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+#nav-container ul li a:hover::after{
+    width: 100%;
+}
+
+#nav-container i{
+    margin-left: auto;
+    font-size: 25px; font-weight: 900; color: rgb(36,47,81);
+    display: none;
+}
+
+
+/* =========== Banner =========== */
+.banner-col{
+    margin-top: 100px;
+}
+.banner{
+    background-image: url('../images/ban-img.png');
+    background-size:cover; background-repeat: no-repeat;
+    height: 550px; margin-top: 20px;
+}.banner-col h5{
+    font-size: 18px; font-family: preg; color: rgb(36, 47, 81);
+    background-color: #e2eaed; width: 65%; height: 35px; line-height: 35px; border-radius: 30px;
+}.banner-col h5 span{
+    line-height: 35px;
+}.banner-col h3{
+    font-family: psemib; font-size: 60px; color: rgb(36, 47, 81);
+    font-weight: bold; margin-top: 10px; margin-bottom: 30px;
+}.banner-col p{
+    font-family: preg;   font-size: 18px;
+    color: rgb(97, 99, 104);
+}.banner-col div button{
+    font-family: pbold; color: white;
+    font-weight: bold; font-size: 16px;
+    background-color: rgb(37, 0, 249); width: 150px; border: none;
+    height: 50px; border-radius: 26px; letter-spacing: 2px;
+    transition: .5s all ease;
+}.banner-col div button:hover{
+    color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+}.banner-col div a{
+    font-family: preg;   font-size: 16px; color: rgb(37, 0, 249);
+}.banner-col div a:hover{
+    color: rgb(36,47,81);
+}
+
+
+
+/* ========== Trust Company =========== */
+
+#trust-company{
+    margin: 70px 0 30px 0;
+}#trust-company p{
+    font-size: 16px;
+    font-family: preg;
+    color: rgb(36, 47, 81);
+}#trust-company-img div{
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+}#trust-company-img{
+    margin-bottom: 150px;
+}#trust-company-img div img{
+    max-width: 100%;
+}
+
+
+/* ======= Awesome Apps ============ */
+
+.awesome_apps h4 {
+    font-family: psemib; font-size: 38px; color: rgb(36,47,81); font-weight: bold;
+}.awesome_apps p{
+    font-family: preg; font-size: 16px; color: rgb(97, 99, 104);
+    margin-top: 20px; margin-bottom: 60px;
+}.awesome_sub h4{
+    font-family: psemib; font-size: 20px;
+}.awesome_sub p {
+    margin-top: 10px; margin-bottom: 30px;
+}
+
+
+/*========== Smart Jacket ========= */
+#smart-jacket{
+    margin: 100px 0;
+}
+#smart-jacket h3{
+    font-family: psemib; font-size: 40px; color: rgb(36,47,81); font-weight: bold;
+}#smart-jacket p{
+    font-size: 16px; color: rgb(97, 99, 104); font-family: preg; 
+    margin-left: 30px; 
+}#border-line{
+    border: 1px solid rgb(97, 99, 104);
+    margin-left: 30px;
+}
+
+
+
+/* ======== cards ========== */
+
+.free-card{
+    border: none;
+}.free-card img{
+    padding: 20px; padding-bottom: 0;
+}.free-card h3{
+    font-size: 20px; font-family: psemib; font-weight: bold; margin-top: 20px;
+}.free-card p{
+    font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin-top: 10px;
+}
+
+/* ========= Design ========== */
+
+.design-col h3{
+    font-family: psemib; color: rgb(36, 47, 81); font-size: 36px; font-weight: bold;
+    width: 70%;
+}.design-col p {
+    font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin-top: 20px; margin-bottom: 8px;
+}.design-col button{
+    font-family: pbold; color: white;
+    font-weight: bold; font-size: 16px;
+    background-color: rgb(37, 0, 249); width: 150px; border: none;
+    height: 50px; border-radius: 26px; letter-spacing: 2px; margin-top: 20px;
+    transition: .5s all ease;
+}.design-col button:hover{
+    color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+}
+
+#design-row{
+    margin: 70px 0;
+}
+  
+/* ============= Why we choose ============= */
+
+
+#choose1 h3 {
+    font-family: psemib;  font-size: 36px; font-family: "Poppins"; color: rgb(36, 47, 81);
+    font-weight: bold; margin-top: 50px; text-align: center;
+}#choose1 p {
+    font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin: 20px 0 50px 0;
+    text-align: center;
+}#choose-col .card{
+    border: none;
+}#choose-col .card .card-img-top{
+    text-align: center;
+}#choose-col .card .card-body h3{
+    font-family: psemib; font-size: 20px; color: rgb(36, 47, 81); font-weight: bold;
+}#choose-col .card .card-body p{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    margin-top: 15px;
+}
+
+#choose-row{
+    margin-bottom: 50px;
+}
+  
+
+/* ============  Ultimate =========== */
+
+#ultimate-row{
+    margin: 70px 0 50px 0;
+}
+#ultimate-row h3{
+    font-family: psemib; color: rgb(36, 47, 81); font-size: 36px; font-weight: bold;
+}#ultimate-row p{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 10px;
+}
+.ultimate-col .card{border: none;}
+.ultimate-col .card-img-top{
+    padding: 20px; padding-bottom: 0;
+}
+.ultimate-col .card h3{
+    font-family: psemib; color: rgb(36, 47, 81); font-size: 20px; font-weight: bold;
+    margin-top: 10px;
+}.ultimate-col .card p{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 10px;
+}
+
+#see_btn{
+    font-family: pbold; color: white;
+    font-weight: bold; font-size: 16px;
+    background-color: rgb(37, 0, 249); width: 150px; border: none;
+    height: 50px; border-radius: 26px; letter-spacing: 2px; margin-top: 20px;
+    transition: .5s all ease;
+}#see_btn:hover{
+    color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+}
+
+
+
+/* ===============  Awesome Features ============= */
+
+#awesome_features-row{
+    margin: 70px 0 50px 0;
+}
+#awesome_features-row h3{
+    font-family: psemib; font-size: 36px; color: rgb(36, 47, 81);
+    text-align: center; font-weight: bold;
+}#awesome_features-row p{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    text-align: center; margin-top: 15px; margin-bottom: 50px;
+}
+
+.tog_btn{
+    text-align: center;
+    width: 350px; display: flex; align-items: center; justify-content: space-evenly;
+    margin: auto; border: 1px solid rgb(97, 99, 104);
+    font-size: 16px; font-family: preg; color: rgba(97, 99, 104, 0.749);
+    border-radius: 30px;
+}.tog_btn a{
+    color: rgba(97, 99, 104, 0.749);
+    width: 50%; padding: 15px 0; border-radius: 30px;
+    margin: 3px;
+}
+
+.tog-active{
+    background-color: rgb(37, 0, 249); color: white!important;
+    border: 1px solid rgb(37, 0, 249);
+}
+
+#price-row{
+    margin-bottom: 50px;
+}
+.price-col .card{border: none; border-radius: 9px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3.837px 54.866px 62px 0px rgba(144, 163, 177, 0.18);}
+.price-col .card-top{
+    background-color: #f4f7f9;
+}
+.price-col h3{
+    font-family: psemib; color: rgb(36, 47, 81); font-size: 60px;
+    text-align: center; margin-top: 30px; font-weight: bold;
+}.price-col h3 span{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+}.price-col h5{
+    font-size: 20px; color: rgb(36,47,81); font-family: psemib;
+    font-weight: bold; text-align: center; margin-top: 10px;
+}.price-col .card-top p{
+    font-family: preg; color: rgb(153, 156, 165); text-align: center;
+}.price-col .card-body p{
+    font-family: preg; color: rgb(153, 156, 165); font-size: 16px;
+    text-align: center;
+}.price-col .card-body button{
+    height: 50px; width: 160px; background-color: rgb(37, 0, 249); color: white;
+    font-size: 16px; font-family: preg; border-radius: 30px;
+    margin: auto; display: block; margin: auto; transition: .5s all ease;
+}.price-col .card-body button:hover{
+    border: 1px solid rgb(37, 0, 249); background-color: #fff; color: rgb(37, 0, 249);
+}#trial-card{
+    margin-top: 20px; margin-bottom: 0;
+    font-size: 16px; color: rgb(37, 0, 249);
+}
+
+/* ============== Client ========== */
+  
+.client-col-1{
+    margin-left: -50px;
+}
+
+
+.client-col-2 h3{
+    font-size: 40px; font-family: psemib; color: rgb(36, 47, 81);
+    font-weight: bold;
+}.client-col-2 p{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 15px;
+}.client-col-2 i{
+    color: rgb(255, 204, 0); font-size: 20px;  margin-right: 10px; margin-top: 10px;
+}.client-col-2 h5{
+    color: rgb(36, 47, 81); font-size: 20px; font-family: psemib; font-weight: bold;
+}.client-col-3{
+    margin-top: 20px; 
+}.client-col-3 h5{
+    font-family: psemib; color: rgb(36, 47, 81); font-size: 18px; font-weight: bold;
+    margin: 0;
+}.client-col-3 p{
+    font-size: 18px; margin-top: 10px; margin-bottom: 0;
+}
+
+/* ============= Frequentlly Asked Question ============== */
+
+.freq-row{
+    margin-top: 150px; text-align: center;
+}.freq-row h3{
+    font-size: 40px; font-family: psemib; color: rgb(36, 47, 81);
+    font-weight: bold;
+}.freq-row p{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin: 20px 0 30px;
+}.accordion button{
+        color: rgb(36, 47, 81); font-family: psemib; font-size: 20px; font-weight: bold;
+        text-decoration: none; outline: none; appearance: none; 
+        padding-left: 0;
+}.accordion .card-header{
+    border-bottom: none; position: relative;
+}.accordion .card-body{
+    background-color: rgba(0,0,0,.03);
+}.accordion .card-body{
+    font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+}.accordion .card-header i{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    color: rgb(36,47,81); font-size: 20px;
+    /* margin-top: 5px; */
+}.accordion .card{
+    border: none; margin: 10px; }
+.accordion .card-body p{
+    width: 95%;
+}
+
+.accordion .card .card-header button:focus{
+   outline: 0!important;
+    outline: none !important;
+    outline-width: 0 !important;
+}.faq-row_2{margin-bottom: 70px;}
+
+
+/* ======= download ========== */
+
+.down-row{
+    margin: 50px 0 0; margin-top: 100px;
+}
+.down-col h3{
+    font-family: psemib; font-size: 42px; color: rgb(36,47,81); font-weight: bold;
+}.down-col p{
+    font-family: preg; font-size: 15px; color: rgb(97, 99, 104); margin-bottom: 40px; margin-top: 20px;
+}
+.down-col{padding-bottom: 30px;}
+
+
+/* ========= footer ============ */
+
+.footer{background-color: rgb(9, 20, 46); }
+.foot-row h3{
+    font-size: 30px; color: white; font-weight: bold; font-family: pbold; text-align: center; margin-top: 70px;
+}.foot-row span{color: rgb(252, 174, 97);}
+#foot-nav{ display: flex; justify-content: center; margin: 20px 0;}
+#foot-nav li{margin: 0 15px;}
+#foot-nav li a{color: white; font-size: 16px; font-family: preg; };
+
+#foot-nav li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(36,47,81);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+#foot-nav li a:hover::after{
+    width: 100%;
+}
+#foot-nav li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: rgb(252, 174, 97);
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+#foot-nav li a:hover::after{
+    width: 100%;
+}
+
+#foot-icon{display: flex; justify-content: center; margin: 20px 0 50px 0;}
+#foot-icon li{margin: 0 15px; font-size: 30px; color: rgb(39, 48, 67);}
+#foot-icon li a{color: rgb(39, 48, 67);}
+
+.foot-row p{text-align: center; margin-bottom: 30px;  font-size: 14px; color: rgba(255, 255, 255, 0.212); font-family: preg;}
+
+.active-foot{
+    color: white;
+}
+
+
+
+  
+#topBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: rgb(233, 144, 55);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none; border-radius: 50%;
+  }
+
+
+
+
+
+
+/* =========== media queries ============ */
+
+@media (min-width:992px) and (max-width:1199px){
+    
+
+/*======== navigation ======== */
+
+    #nav-container{
+        display: flex; align-items: center;
+        padding: 0 13%; margin-top: 40px;
+    }#nav-container .nav-logo{
+        font-family: pbold;
+        font-size: 28px;
+        font-weight: bold; color: rgb(36, 47, 81);
+    }
+    #nav-container ul li{
+        display: inline-block;
+        font-size: 15px;
+        color: rgb(36, 47, 81); font-family: preg;
+        margin-right: 18px;
+    }#nav-container ul li button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 15px;
+        background-color: rgb(37, 0, 249); width: 160px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px;
+    }
+
+    
+ /* =========== Banner =========== */
+    .banner-col{
+        margin-top: 100px;
+    }
+    .banner{
+        background-image: url('../images/ban-img.png');
+        background-size:cover; background-repeat: no-repeat;
+        height: 550px; margin-top: 20px;
+    }.banner-col h5{
+        font-size: 15px; font-family: preg; color: rgb(36, 47, 81);
+        background-color: #e2eaed; width: 70%; height: 35px; line-height: 35px; border-radius: 30px;
+    }.banner-col h5 span{
+        line-height: 35px;
+    }.banner-col h3{
+        font-family: psemib; font-size: 52px; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 10px; margin-bottom: 30px;
+    }.banner-col p{
+        font-family: preg;   font-size: 17px;
+        color: rgb(97, 99, 104);
+    }.banner-col div button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 15px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px;
+        transition: .5s all ease;
+    }.banner-col div button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }.banner-col div a{
+        font-family: preg;   font-size: 15px; color: rgb(37, 0, 249);
+    }.banner-col div a:hover{
+        color: rgb(36,47,81);
+    }
+
+    
+
+/* ======= Awesome Apps ============ */
+
+    .awesome_apps h4 {
+        font-family: psemib; font-size: 38px; color: rgb(36,47,81); font-weight: bold;
+    }.awesome_apps p{
+        font-family: preg; font-size: 16px; color: rgb(97, 99, 104);
+        margin-top: 15px; margin-bottom: 40px;
+    }.awesome_sub h4{
+        font-family: psemib; font-size: 20px;
+    }.awesome_sub p {
+        margin-top: 5px; margin-bottom: 30px; font-size: 15px;
+    }
+
+    
+/*========== Smart Jacket ========= */
+    #smart-jacket{
+        margin: 60px 0;
+    }
+    #smart-jacket h3{
+        font-family: psemib; font-size: 33px; color: rgb(36,47,81); font-weight: bold;
+    }#smart-jacket p{
+        font-size: 13px; color: rgb(97, 99, 104); font-family: preg; 
+        margin-left: 30px; 
+    }#border-line{
+        border: 1px solid rgb(97, 99, 104);
+        margin-left: 30px;
+    }
+
+    
+/* ============  Ultimate =========== */
+
+    #ultimate-row{
+        margin: 70px 0 40px 0;
+    }
+    #ultimate-row h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 36px; font-weight: bold;
+    }#ultimate-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 10px; margin-bottom: 0;
+    }
+    .ultimate-col .card{border: none;}
+    .ultimate-col .card .card-body{
+        padding: 10px 20px;
+    }
+    .ultimate-col .card-img-top{
+        padding: 20px; padding-bottom: 0;
+    }
+    .ultimate-col .card h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 18px; font-weight: bold;
+        margin-top: 10px;
+    }.ultimate-col .card p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 15px; margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #see_btn{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 16px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px; margin-top: 10px;
+        transition: .5s all ease;
+    }#see_btn:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+
+        /* ============== Client ========== */
+    
+    .client-col-1{
+        margin-left: 0px;
+    }
+
+
+    .client-col-2 h3{
+        font-size: 30px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold;
+    }.client-col-2 p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px; margin-top: 12px;
+    }.client-col-2 i{
+        color: rgb(255, 204, 0); font-size: 20px;  margin-right: 10px; margin-top: 0px;
+    }.client-col-2 h5{
+        color: rgb(36, 47, 81); font-size: 14px; font-family: psemib; font-weight: bold;
+    }.client-col-3{
+        margin-top: 15px; 
+    }.client-col-3 h5{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 16px; font-weight: bold;
+        margin: 0;
+    }.client-col-3 p{
+        font-size: 14px; margin-top: 10px; margin-bottom: 0;
+    }.client-col-3 img{
+        max-width: 70%;
+    }.client-col-3 .col-3{padding-right: 0;}
+
+
+    /* ======= download ========== */
+
+    .down-row{
+        margin: 50px 0 0; margin-top: 100px;
+    }
+    .down-col h3{
+        font-family: psemib; font-size: 35px; color: rgb(36,47,81); font-weight: bold;
+    }.down-col p{
+        font-family: preg; font-size: 15px; color: rgb(97, 99, 104); margin-bottom: 40px; margin-top: 20px;
+    }.down-col a img:first-child{margin-right: 10px;}
+    .down-col{padding-bottom: 30px;}
+    
+    /* #down-img_div{max-width: 85%;} */
+    #down-img_div img{max-width: 80%;}
+}
+
+
+@media (min-width:768px) and (max-width:991px){
+
+    
+/*======== navigation ======== */
+
+    #nav-container{
+        display: flex; align-items: center;
+        padding: 0 12%; margin-top: 40px;
+    }#nav-container .nav-logo{
+        font-family: pbold;
+        font-size: 26px;
+        font-weight: bold; color: rgb(36, 47, 81);
+    }
+    #nav-container ul li{
+        display: inline-block;
+        font-size: 14px;
+        color: rgb(36, 47, 81); font-family: preg;
+        margin-right: 7px;
+    }#nav-container ul li button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 130px; border: none;
+        height: 40px; border-radius: 26px; letter-spacing: 2px;
+    }#nav-container ul li:last-child{
+        margin-left: 0;
+    }
+
+       
+ /* =========== Banner =========== */
+ .banner-col{
+        margin-top: 85px;
+    }
+    .banner{
+        background-image: url('../images/ban-img.png');
+        background-size:cover; background-repeat: no-repeat;
+        height: 550px; margin-top: 20px;
+    }.banner-col h5{
+        font-size: 14px; font-family: preg; color: rgb(36, 47, 81);
+        background-color: #e2eaed; width: 85%; height: 35px; line-height: 35px; border-radius: 30px;
+    }.banner-col h5 span{
+        line-height: 35px;
+    }.banner-col h3{
+        font-family: psemib; font-size: 45px; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 10px; margin-bottom: 15px;
+    }.banner-col p{
+        font-family: preg;   font-size: 16px;
+        color: rgb(97, 99, 104);
+    }.banner-col div button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px;
+        transition: .5s all ease;
+    }.banner-col div button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }.banner-col div a{
+        font-family: preg;   font-size: 14px; color: rgb(37, 0, 249);
+    }.banner-col div a:hover{
+        color: rgb(36,47,81);
+    }
+
+    /* ========== Trust Company =========== */
+
+    #trust-company{
+        margin: 50px 0 25px 0;
+    }#trust-company p{
+        font-size: 16px;
+        font-family: preg;
+        color: rgb(36, 47, 81);
+    }#trust-company-img div{
+    width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }#trust-company-img{
+        margin-bottom: 70px;
+    }#trust-company-img div img{
+        max-width: 100%; margin: 25px 15px 15px;
+    }
+
+
+    
+/* ======= Awesome Apps ============ */
+
+    .awesome_apps h4 {
+        font-family: psemib; font-size: 30px; color: rgb(36,47,81); font-weight: bold;
+    }.awesome_apps p{
+        font-family: preg; font-size: 14px; color: rgb(97, 99, 104);
+        margin-top: 15px; margin-bottom: 25px;
+    }.awesome_sub h4{
+        font-family: psemib; font-size: 16px;
+    }.awesome_sub p {
+        margin-top: 5px; margin-bottom: 15px; font-size: 12px;
+    }
+
+    /*========== Smart Jacket ========= */
+    #smart-jacket{
+        margin: 60px 0;
+    }
+    #smart-jacket h3{
+        font-family: psemib; font-size: 28px; color: rgb(36,47,81); font-weight: bold;
+    }#smart-jacket p{
+        font-size: 12px; color: rgb(97, 99, 104); font-family: preg; 
+        margin-left: 30px; 
+    }#border-line{
+        border: 1px solid rgb(97, 99, 104);
+        margin-left: 20px;
+    }
+
+        /* ======== cards ========== */
+
+    .free-card{
+        border: none;
+    }.free-card img{
+        padding: 20px; padding-bottom: 0;
+    }.free-card h3{
+        font-size: 14px; font-family: psemib; font-weight: bold; margin-top: 20px;
+    }.free-card p{
+        font-family: preg; font-size: 12px; color: rgb(97, 99, 104); margin-top: 10px;
+    }
+
+    /* ========= Design ========== */
+
+    .design-col h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 30px; font-weight: bold;
+        width: 100%;
+    }.design-col p {
+        font-family: preg; font-size: 14px; color: rgb(97, 99, 104); margin-top: 20px; margin-bottom: 8px;
+    }.design-col button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px; margin-top: 15px;
+        transition: .5s all ease;
+    }.design-col button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+    #design-row{
+        margin: 60px 0;
+    }
+
+/* ============== why choose ========== */
+    
+    #choose1 h3 {
+        font-family: psemib;  font-size: 36px; font-family: "Poppins"; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 35px;
+    }#choose1 p {
+        font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin: 20px 0 50px 0;
+    }#choose-col .card{
+        border: none;
+    }#choose-col .card .card-img-top{
+        text-align: center;
+    }#choose-col .card .card-body h3{
+        font-family: psemib; font-size: 20px; color: rgb(36, 47, 81); font-weight: bold;
+    }#choose-col .card .card-body p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px;
+        margin-top: 15px;
+    }
+    #choose-row{
+        margin-bottom: 35px;
+    }
+
+       
+/* ============  Ultimate =========== */
+
+    #ultimate-row{
+        margin: 50px 0 30px 0;
+    }
+    #ultimate-row h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 36px; font-weight: bold;
+    }#ultimate-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 10px; margin-bottom: 0;
+    }
+    .ultimate-col {padding: 0;}
+    .ultimate-col .card{border: none;}
+    .ultimate-col .card .card-body{
+        padding: 10px 20px;
+    }
+    .ultimate-col .card-img-top{
+        padding: 10px; padding-bottom: 0;
+    }
+    .ultimate-col .card h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 15px; font-weight: bold;
+        margin-top: 10px;
+    }.ultimate-col .card p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 13px; margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #see_btn{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 13px;
+        background-color: rgb(37, 0, 249); width: 130px; border: none;
+        height: 45px; border-radius: 26px; letter-spacing: 2px; margin-top: 10px;
+        transition: .5s all ease;
+    }#see_btn:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+
+    /* ===============  Awesome Features ============= */
+
+    #awesome_features-row{
+        margin: 70px 0 50px 0;
+    }
+    #awesome_features-row h3{
+        font-family: psemib; font-size: 36px; color: rgb(36, 47, 81);
+        text-align: center; font-weight: bold;
+    }#awesome_features-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+        text-align: center; margin-top: 15px; margin-bottom: 40px;
+    }
+
+    .tog_btn{
+        text-align: center;
+        width: 350px; display: flex; align-items: center; justify-content: space-evenly;
+        margin: auto; border: 1px solid rgb(97, 99, 104);
+        font-size: 16px; font-family: preg; color: rgba(97, 99, 104, 0.749);
+        border-radius: 30px;
+    }.tog_btn a{
+        color: rgba(97, 99, 104, 0.749);
+        width: 50%; padding: 15px 0; border-radius: 30px;
+        margin: 3px;
+    }
+
+    .tog-active{
+        background-color: rgb(37, 0, 249); color: white!important;
+        border: 1px solid rgb(37, 0, 249);
+    }
+
+    #price-row{
+        margin-bottom: 50px;
+    }
+    .price-col .card{border: none; border-radius: 9px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3.837px 54.866px 62px 0px rgba(144, 163, 177, 0.18);}
+    .price-col .card-top{
+        background-color: #f4f7f9;
+    }
+    .price-col h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 60px;
+        text-align: center; margin-top: 30px; font-weight: bold;
+    }.price-col h3 span{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    }.price-col h5{
+        font-size: 20px; color: rgb(36,47,81); font-family: psemib;
+        font-weight: bold; text-align: center; margin-top: 10px;
+    }.price-col .card-top p{
+        font-family: preg; color: rgb(153, 156, 165); text-align: center;
+    }.price-col .card-body p{
+        font-family: preg; color: rgb(153, 156, 165); font-size: 16px;
+        text-align: center;
+    }.price-col .card-body button{
+        height: 50px; width: 160px; background-color: rgb(37, 0, 249); color: white;
+        font-size: 16px; font-family: preg; border-radius: 30px;
+        margin: auto; display: block; margin: auto;
+    }#trial-card{
+        color: rgb(36,47,81); margin-top: 20px; margin-bottom: 0;
+    }
+
+    /* ============== Client ========== */
+    
+    .client-col-1{
+        margin-left: -30px; padding-right: 0;
+    }
+
+
+    .client-col-2 h3{
+        font-size: 25px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold;
+    }.client-col-2 p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 12px; margin-top: 8px; margin-bottom: 8px;
+    }.client-col-2 i{
+        color: rgb(255, 204, 0); font-size: 15px;  margin-right: 10px; margin-top: 0px;
+    }.client-col-2 h5{
+        color: rgb(36, 47, 81); font-size: 14px; font-family: psemib; font-weight: bold;
+    }.client-col-3{
+        margin-top: 15px; 
+    }.client-col-3 h5{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 14px; font-weight: bold;
+        margin: 0;
+    }.client-col-3 p{
+        font-size: 12px; margin-top: 10px; margin-bottom: 0;
+    }.client-col-3 img{
+        max-width: 60%;
+    }.client-col-3 .col-3{padding-right: 0;}
+
+    /* ============= Frequentlly Asked Question ============== */
+
+
+    .freq-row{
+        margin-top: 100px; text-align: center;
+    }.freq-row h3{
+        font-size: 36px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold;
+    }.freq-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin: 20px 0 20px;
+    }.accordion button{
+            color: rgb(36, 47, 81); font-family: psemib; font-size: 18px; font-weight: bold;
+            text-decoration: none; outline: none; appearance: none; 
+            padding-left: 0;
+    }.accordion .card-header{
+        border-bottom: none; position: relative;
+    }.accordion .card-body{
+        background-color: rgba(0,0,0,.03);
+    }.accordion .card-body{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    }.accordion .card-header i{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        color: rgb(36,47,81); font-size: 20px;
+        /* margin-top: 5px; */
+    }.accordion .card{
+        border: none; margin: 10px; }
+    .accordion .card-body p{
+        width: 95%;
+    }
+
+    .accordion .card .card-header button:focus{
+    outline: 0!important;
+        outline: none !important;
+        outline-width: 0 !important;
+    }.faq-row_2{margin-bottom: 40px;}
+
+     /* ======= download ========== */
+
+     .down-row{
+        margin: 40px 0 0; margin-top: 100px;
+    }
+    .down-col h3{
+        font-family: psemib; font-size: 32px; color: rgb(36,47,81); font-weight: bold; margin-top: 20px;
+    }.down-col p{
+        font-family: preg; font-size: 12px; color: rgb(97, 99, 104); margin-bottom: 20px; margin-top: 5px;
+    }
+    .down-col{padding-bottom: 30px;}
+    
+}
+
+
+@media (min-width:481px) and (max-width:767px){
+       
+/*======== navigation ======== */
+
+    #nav-container{
+        display: flex; align-items: center;
+        padding: 0 12%; margin-top: 30px;
+    }#nav-container .nav-logo{
+        font-family: pbold;
+        font-size: 30px;
+        font-weight: bold; color: rgb(36, 47, 81);
+    }
+    #list{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh; 
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        background-color: #fff;
+        transition: 1s ease;
+    }
+    #nav-container ul li{
+        display: block;
+        font-size: 20px;
+        color: rgb(36, 47, 81); font-family: preg;
+        margin: 25px; text-align: center;
+    }#nav-container ul li button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 16px;
+        background-color: rgb(37, 0, 249); width: 170px; border: none;
+        height: 40px; border-radius: 26px; letter-spacing: 2px; margin-top: 10px;
+    }#nav-container ul li:last-child{
+        margin-left: 0;
+    }#nav-container ul li:first-child{
+        margin-top: 70px;
+    }
+    #nav-container i{
+        display: block;
+    }#nav-container ul li a{
+        text-align: center; letter-spacing: 2px;
+    }
+    .fa-times{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        display: block;
+    }
+    #nav-container ul li a:hover::after{
+        width: 40%;
+    }
+ /* =========== Banner =========== */
+    .banner-col{
+        margin-top: 50px;
+    }
+    .banner{
+        height: auto; margin-top: 20px; background: none; 
+    }.banner-col h5{
+        font-size: 14px; font-family: preg; color: rgb(36, 47, 81);
+        background-color: #e2eaed; width: 85%; height: 35px; line-height: 35px; border-radius: 30px;
+    }.banner-col h5 span{
+        line-height: 35px;
+    }.banner-col h3{
+        font-family: psemib; font-size: 45px; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 10px; margin-bottom: 15px;
+    }.banner-col p{
+        font-family: preg;   font-size: 16px;
+        color: rgb(97, 99, 104);
+    }.banner-col div button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px;
+        transition: .5s all ease;
+    }.banner-col div button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }.banner-col div a{
+        font-family: preg;   font-size: 14px; color: rgb(37, 0, 249);
+    }.banner-col div a:hover{
+        color: rgb(36,47,81);
+    }
+
+    /* ========== Trust Company =========== */
+
+    trust-company{
+        margin: 50px 0 25px 0;
+    }#trust-company p{
+        font-size: 16px;
+        font-family: preg;
+        color: rgb(36, 47, 81);
+    }#trust-company-img div{
+    width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }#trust-company-img{
+        margin-bottom: 70px;
+    }#trust-company-img div img{
+        max-width: 100%; margin: 25px 15px 15px;
+    } 
+
+    /*========== Smart Jacket ========= */
+    #smart-jacket{
+        margin: 40px 0;
+    }
+    #smart-jacket h3{
+        font-family: psemib; font-size: 45px; color: rgb(36,47,81); font-weight: bold;
+        margin-bottom: 30px;
+    }#smart-jacket p{
+        font-size: 16px; color: rgb(97, 99, 104); font-family: preg; 
+        margin-left: 0px; 
+    }#border-line{
+        border: none;
+        margin-left: 0px;
+    }
+    
+    /* =========== free card ============ */
+    .free-card{
+        border: none;
+    }.free-card .card-img-top{
+        text-align: center; 
+    }.free-card img{
+        padding: 20px; padding-bottom: 0;
+    }.free-card h3{
+         font-family: psemib; font-weight: bold; margin-top: 20px;
+        text-align: center;
+    }.free-card p{
+        font-family: preg;  color: rgb(97, 99, 104); margin-top: 10px;
+        text-align: center;
+    }
+
+    /* ========= Design ========== */
+
+    .design-col h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-weight: bold;
+        width: 100%; margin-top: 20px;
+    }.design-col p {
+        font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin-top: 20px; margin-bottom: 8px;
+    }.design-col button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px; margin-top: 15px;
+        transition: .5s all ease;
+    }.design-col button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+    #design-row{
+        margin: 60px 0;
+    }
+
+    /* ============== why choose ========== */
+    
+    #choose1 h3 {
+        font-family: psemib;  font-size: 36px; font-family: "Poppins"; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 25px;
+    }#choose1 p {
+        font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin: 20px 0 40px 0;
+    }#choose-col .card{
+        border: none;
+    }#choose-col .card .card-img-top{
+        text-align: center;
+    }#choose-col .card .card-body h3{
+        font-family: psemib; font-size: 20px; color: rgb(36, 47, 81); font-weight: bold;
+        margin-bottom: 15px;
+    }#choose-col .card .card-body p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px;
+        margin-top: 15px; width: 70%;
+        margin: auto;
+    }
+    #choose-row{
+        margin-bottom: 25px;
+    }
+
+    /* ============  Ultimate =========== */
+
+    #ultimate-row{
+        margin: 50px 0 30px 0;
+    }
+    #ultimate-row h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 36px; font-weight: bold;
+    }#ultimate-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 10px; margin-bottom: 0;
+    }
+    .ultimate-col {padding: 0;}
+    .ultimate-col .card{border: none;}
+    .ultimate-col .card .card-body{
+        padding: 10px 20px;
+    }
+    .ultimate-col .card-img-top{
+        padding: 20px; padding-bottom: 0; text-align: center;
+    }
+    .ultimate-col .card h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 20px; font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }.ultimate-col .card p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px; margin-top: 10px;
+        margin-bottom: 0; text-align: center; width: 70%; margin: auto;
+    }
+
+    #see_btn{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 16px;
+        background-color: rgb(37, 0, 249); width: 130px; border: none;
+        height: 45px; border-radius: 26px; letter-spacing: 2px; margin-top: 10px;
+        transition: .5s all ease; display: flex; margin: auto; align-items: center;
+        justify-content: center; margin-top: 20px;
+    }#see_btn:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+
+    
+    /* ===============  Awesome Features ============= */
+
+    #awesome_features-row{
+        margin: 70px 0 50px 0;
+    }
+    #awesome_features-row h3{
+        font-family: psemib; font-size: 36px; color: rgb(36, 47, 81);
+        text-align: center; font-weight: bold;
+    }#awesome_features-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+        text-align: center; margin-top: 15px; margin-bottom: 40px;
+    }
+
+    .tog_btn{
+        text-align: center;
+        width: 350px; display: flex; align-items: center; justify-content: space-evenly;
+        margin: auto; border: 1px solid rgb(97, 99, 104);
+        font-size: 16px; font-family: preg; color: rgba(97, 99, 104, 0.749);
+        border-radius: 30px;
+    }.tog_btn a{
+        color: rgba(97, 99, 104, 0.749);
+        width: 50%; padding: 15px 0; border-radius: 30px;
+        margin: 3px;
+    }
+
+    .tog-active{
+        background-color: rgb(37, 0, 249); color: white!important;
+        border: 1px solid rgb(37, 0, 249);
+    }
+
+    #price-row{
+        margin-bottom: 50px;
+    }
+    .price-col .card{border: none; border-radius: 9px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3.837px 54.866px 62px 0px rgba(144, 163, 177, 0.18);}
+    .price-col .card-top{
+        background-color: #f4f7f9;
+    }
+    .price-col h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 60px;
+        text-align: center; margin-top: 30px; font-weight: bold;
+    }.price-col h3 span{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    }.price-col h5{
+        font-size: 20px; color: rgb(36,47,81); font-family: psemib;
+        font-weight: bold; text-align: center; margin-top: 10px;
+    }.price-col .card-top p{
+        font-family: preg; color: rgb(153, 156, 165); text-align: center;
+    }.price-col .card-body p{
+        font-family: preg; color: rgb(153, 156, 165); font-size: 16px;
+        text-align: center;
+    }.price-col .card-body button{
+        height: 50px; width: 160px; background-color: rgb(37, 0, 249); color: white;
+        font-size: 16px; font-family: preg; border-radius: 30px;
+        margin: auto; display: block; margin: auto;
+    }#trial-card{
+        color: rgb(36,47,81); margin-top: 20px; margin-bottom: 0;
+    }.price-col .card{
+        margin: 20px;
+    }
+
+    
+/* ============== Client ========== */
+    
+    .client-col-1{
+        margin-left: 0px;
+    }
+
+
+    .client-col-2 h3{
+        font-size: 36px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 20px;
+    }.client-col-2 p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 15px;
+    }.client-col-2 i{
+        color: rgb(255, 204, 0); font-size: 16px;  margin-right: 10px; margin-top: 10px;
+    }.client-col-2 h5{
+        color: rgb(36, 47, 81); font-size: 20px; font-family: psemib; font-weight: bold;
+    }.client-col-3{
+        margin-top: 20px; 
+    }.client-col-3 h5{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 18px; font-weight: bold;
+        margin: 0;
+    }.client-col-3 p{
+        font-size: 18px; margin-top: 10px; margin-bottom: 0;
+    }
+
+        
+    /* ============= Frequentlly Asked Question ============== */
+
+    .freq-row{
+        margin-top: 100px; text-align: center;
+    }.freq-row h3{
+        font-size: 36px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold;
+    }.freq-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin: 20px 0 20px;
+    }.accordion button{
+            color: rgb(36, 47, 81); font-family: psemib; font-size: 18px; font-weight: bold;
+            text-decoration: none; outline: none; appearance: none; 
+            padding-left: 0; width: 98%;
+    }.accordion .card-header{
+        border-bottom: none; position: relative;
+    }.accordion .card-body{
+        background-color: rgba(0,0,0,.03);
+    }.accordion .card-body{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    }.accordion .card-header i{
+        position: absolute;
+        top: 37%;
+        right: 15px;
+        color: rgb(36,47,81); font-size: 20px;
+        /* margin-top: 5px; */
+    }.accordion .card{
+        border: none; margin: 10px; }
+    .accordion .card-body p{
+        width: 95%;
+    }
+
+    .accordion .card .card-header button:focus{
+    outline: 0!important;
+        outline: none !important;
+        outline-width: 0 !important;
+    }.faq-row_2{margin-bottom: 50px;}
+
+    /* ======= download ========== */
+
+    .down-row{
+       margin: 40px 0 0; margin-top: 100px;
+   }
+   .down-col h3{
+       font-family: psemib;  color: rgb(36,47,81); font-weight: bold; margin-top: 20px;
+   }.down-col p{
+       font-family: preg;  color: rgb(97, 99, 104); margin-bottom: 30px; margin-top: 15px;
+   }
+   .down-col{padding-bottom: 30px;}
+
+   
+/* ========= footer ============ */
+
+    .footer{background-color: rgb(9, 20, 46); }
+    .foot-row h3{
+        font-size: 30px; color: white; font-weight: bold; font-family: pbold; text-align: center; margin-top: 50px; margin-bottom: 20px;
+    }.foot-row span{color: rgb(252, 174, 97);}
+    #foot-nav{ display: flex; justify-content: center; margin: 0px 0; flex-direction: column;}
+    #foot-nav li{margin: 10px 0px;}
+    #foot-nav li a{color: white; font-size: 16px; font-family: preg; };
+
+    #foot-nav li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(36,47,81);
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    #foot-nav li a:hover::after{
+        width: 0%;
+    }
+    #foot-nav li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(252, 174, 97);
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    #foot-nav li a:hover::after{
+        width: 0%;
+    }
+
+    #foot-icon{display: flex; justify-content: center; margin: 20px 0 50px 0;}
+    #foot-icon li{margin: 0 15px; font-size: 30px; color: rgb(39, 48, 67);}
+    #foot-icon li a{color: rgb(39, 48, 67);}
+
+    .foot-row p{text-align: center; margin-bottom: 30px;  font-size: 14px; color: rgba(255, 255, 255, 0.212); font-family: preg;}
+
+    .active-foot{
+        color: white;
+    }
+
+
+
+
+    
+}
+
+
+@media (max-width:481px){
+    /*======== navigation ======== */
+
+    #nav-container{
+        display: flex; align-items: center;
+        padding: 0 12%; margin-top: 30px;
+    }#nav-container .nav-logo{
+        font-family: pbold;
+        font-size: 30px;
+        font-weight: bold; color: rgb(36, 47, 81);
+    }
+    #list{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh; 
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        background-color: #fff;
+        transition: 1s ease;
+    }
+    #nav-container ul li{
+        display: block;
+        font-size: 20px;
+        color: rgb(36, 47, 81); font-family: preg;
+        margin: 25px; text-align: center;
+    }#nav-container ul li button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 16px;
+        background-color: rgb(37, 0, 249); width: 170px; border: none;
+        height: 40px; border-radius: 26px; letter-spacing: 2px; margin-top: 10px;
+    }#nav-container ul li:last-child{
+        margin-left: 0;
+    }#nav-container ul li:first-child{
+        margin-top: 70px;
+    }
+    #nav-container i{
+        display: block;
+    }#nav-container ul li a{
+        text-align: center; letter-spacing: 2px;
+    }
+    .fa-times{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        display: block;
+    }
+    #nav-container ul li a:hover::after{
+        width: 40%;
+    }
+ /* =========== Banner =========== */
+    .banner-col{
+        margin-top: 40px;
+    }
+    .banner{
+        height: auto; margin-top: 20px; background: none; 
+    }.banner-col h5{
+        font-size: 14px; font-family: preg; color: rgb(36, 47, 81);
+        background-color: #e2eaed; width: 85%; height: 35px; line-height: 35px; border-radius: 30px;
+    }.banner-col h5 span{
+        line-height: 35px;
+    }.banner-col h3{
+        font-family: psemib; font-size: 45px; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 15px; margin-bottom: 25px;
+    }.banner-col p{
+        font-family: preg;   font-size: 16px;
+        color: rgb(97, 99, 104); 
+    }.banner-col div button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px;
+        transition: .5s all ease;
+    }.banner-col div button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }.banner-col div a{
+        font-family: preg;   font-size: 14px; color: rgb(37, 0, 249);
+    }.banner-col div a:hover{
+        color: rgb(36,47,81);
+    }
+
+    /* ========== Trust Company =========== */
+
+    #trust-company{
+        margin: 50px 0 20px 0;
+    }#trust-company p{
+        font-size: 16px;
+        font-family: preg;
+        color: rgb(36, 47, 81);
+    }#trust-company-img div{
+    width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }#trust-company-img{
+        margin-bottom: 70px;
+    }#trust-company-img div img{
+        max-width: 100%; margin: 25px 15px 15px;
+    }
+
+    /*========== Smart Jacket ========= */
+    #smart-jacket{
+        margin: 40px 0;
+    }
+    #smart-jacket h3{
+        font-family: psemib; font-size: 40px; color: rgb(36,47,81); font-weight: bold;
+        margin-bottom: 30px;
+    }#smart-jacket p{
+        font-size: 16px; color: rgb(97, 99, 104); font-family: preg; 
+        margin-left: 0px; 
+    }#border-line{
+        border: none;
+        margin-left: 0px;
+    }
+
+     /* =========== free card ============ */
+     .free-card{
+        border: none;
+    }.free-card .card-img-top{
+        text-align: center; 
+    }.free-card img{
+        padding: 20px; padding-bottom: 0;
+    }.free-card h3{
+         font-family: psemib; font-weight: bold; margin-top: 20px;
+        text-align: center;
+    }.free-card p{
+        font-family: preg;  color: rgb(97, 99, 104); margin-top: 10px;
+        text-align: center;
+    }
+
+    /* ========= Design ========== */
+
+    .design-col h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-weight: bold; font-size: 30px;
+        width: 100%; margin-top: 20px;
+    }.design-col p {
+        font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin-top: 20px; margin-bottom: 8px;
+    }.design-col button{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 14px;
+        background-color: rgb(37, 0, 249); width: 150px; border: none;
+        height: 50px; border-radius: 26px; letter-spacing: 2px; margin-top: 15px;
+        transition: .5s all ease;
+    }.design-col button:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+    #design-row{
+        margin: 50px 0;
+    }
+
+     /* ============== why choose ========== */
+    
+     #choose1 h3 {
+        font-family: psemib;  font-size: 36px; font-family: "Poppins"; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 25px; text-align: left;
+    }#choose1 p {
+        font-family: preg; font-size: 16px; color: rgb(97, 99, 104); margin: 20px 0 40px 0;
+        text-align: left;
+    }
+
+     /* ============  Ultimate =========== */
+
+     #ultimate-row{
+        margin: 50px 0 30px 0;
+    }
+    #ultimate-row h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 36px; font-weight: bold;
+    }#ultimate-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 10px; margin-bottom: 0;
+    }
+    .ultimate-col {padding: 0;}
+    .ultimate-col .card{border: none;}
+    .ultimate-col .card .card-body{
+        padding: 10px 20px;
+    }
+    .ultimate-col .card-img-top{
+        padding: 20px; padding-bottom: 0; text-align: center;
+    }
+    .ultimate-col .card h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 20px; font-weight: bold;
+        text-align: center;
+        margin-top: 10px;
+    }.ultimate-col .card p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px; margin-top: 10px;
+        margin-bottom: 0; text-align: center; width: 70%; margin: auto;
+    }
+
+    #see_btn{
+        font-family: pbold; color: white;
+        font-weight: bold; font-size: 16px;
+        background-color: rgb(37, 0, 249); width: 130px; border: none;
+        height: 45px; border-radius: 26px; letter-spacing: 2px; margin-top: 10px;
+        transition: .5s all ease; display: flex; margin: auto; align-items: center;
+        justify-content: center; margin-top: 20px;
+    }#see_btn:hover{
+        color: rgb(37, 0, 249); background-color: white; border: 1px solid rgb(37, 0, 249);
+    }
+
+     
+    /* ===============  Awesome Features ============= */
+
+    #awesome_features-row{
+        margin: 70px 0 50px 0;
+    }
+    #awesome_features-row h3{
+        font-family: psemib; font-size: 32px; color: rgb(36, 47, 81);
+        text-align: center; font-weight: bold;
+    }#awesome_features-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px;
+        text-align: center; margin-top: 15px; margin-bottom: 30px;
+    }
+
+    .tog_btn{
+        text-align: center;
+        width: 250px; display: flex; align-items: center; justify-content: space-evenly;
+        margin: auto; border: 1px solid rgb(97, 99, 104);
+        font-size: 16px; font-family: preg; color: rgba(97, 99, 104, 0.749);
+        border-radius: 30px;
+    }.tog_btn a{
+        color: rgba(97, 99, 104, 0.749);
+        width: 50%; padding: 10px 0; border-radius: 30px;
+        margin: 3px;
+    }
+
+    .tog-active{
+        background-color: rgb(37, 0, 249); color: white!important;
+        border: 1px solid rgb(37, 0, 249);
+    }
+
+    #price-row{
+        margin-bottom: 30px;
+    }
+    .price-col .card{border: none; border-radius: 9px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3.837px 54.866px 62px 0px rgba(144, 163, 177, 0.18);}
+    .price-col .card-top{
+        background-color: #f4f7f9;
+    }
+    .price-col h3{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 60px;
+        text-align: center; margin-top: 30px; font-weight: bold;
+    }.price-col h3 span{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px;
+    }.price-col h5{
+        font-size: 20px; color: rgb(36,47,81); font-family: psemib;
+        font-weight: bold; text-align: center; margin-top: 10px;
+    }.price-col .card-top p{
+        font-family: preg; color: rgb(153, 156, 165); text-align: center;
+    }.price-col .card-body p{
+        font-family: preg; color: rgb(153, 156, 165); font-size: 16px;
+        text-align: center;
+    }.price-col .card-body button{
+        height: 50px; width: 160px; background-color: rgb(37, 0, 249); color: white;
+        font-size: 16px; font-family: preg; border-radius: 30px;
+        margin: auto; display: block; margin: auto;
+    }#trial-card{
+        color: rgb(36,47,81); margin-top: 20px; margin-bottom: 0;
+    }.price-col .card{
+        margin: 20px;
+    }
+
+      
+/* ============== Client ========== */
+        
+    .client-col-1{
+        margin-left: 0px;
+    }
+
+
+    .client-col-2 h3{
+        font-size: 35px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold; margin-top: 40px;
+    }.client-col-2 p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin-top: 15px;
+    }.client-col-2 i{
+        color: rgb(255, 204, 0); font-size: 16px;  margin-right: 10px; margin-top: 10px;
+    }.client-col-2 h5{
+        color: rgb(36, 47, 81); font-size: 20px; font-family: psemib; font-weight: bold;
+    }.client-col-3{
+        margin-top: 20px; 
+    }.client-col-3 h5{
+        font-family: psemib; color: rgb(36, 47, 81); font-size: 18px; font-weight: bold;
+        margin: 0;
+    }.client-col-3 p{
+        font-size: 18px; margin-top: 10px; margin-bottom: 0;
+    }
+
+
+      /* ============= Frequentlly Asked Question ============== */
+
+      .freq-row{
+        margin-top: 80px; text-align: center;
+    }.freq-row h3{
+        font-size: 36px; font-family: psemib; color: rgb(36, 47, 81);
+        font-weight: bold;
+    }.freq-row p{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 16px; margin: 20px 0 20px;
+    }.accordion button{
+            color: rgb(36, 47, 81); font-family: psemib; font-size: 16px; font-weight: bold;
+            text-decoration: none; outline: none; appearance: none; 
+            padding-left: 0; width: 98%;
+    }.accordion .card-header{
+        border-bottom: none; position: relative;
+    }.accordion .card-body{
+        background-color: rgba(0,0,0,.03);
+    }.accordion .card-body{
+        font-family: preg; color: rgb(97, 99, 104); font-size: 14px;
+    }.accordion .card-header i{
+        position: absolute;
+        top: 37%;
+        right: 15px;
+        color: rgb(36,47,81); font-size: 18px;
+        /* margin-top: 5px; */
+    }.accordion .card{
+        border: none; margin: 10px; }
+    .accordion .card-body p{
+        width: 95%;
+    }
+
+    .accordion .card .card-header button:focus{
+    outline: 0!important;
+        outline: none !important;
+        outline-width: 0 !important;
+    }.faq-row_2{margin-bottom: 50px;}
+
+    /* ======= download ========== */
+
+    .down-row{
+        margin: 40px 0 0; margin-top: 100px;
+    }
+    .down-col h3{
+        font-family: psemib;  color: rgb(36,47,81); font-weight: bold; margin-top: 20px;
+    }.down-col p{
+        font-family: preg;  color: rgb(97, 99, 104); margin-bottom: 30px; margin-top: 15px;
+    }
+    .down-col{padding-bottom: 30px;}
+ 
+
+       
+/* ========= footer ============ */
+
+    .footer{background-color: rgb(9, 20, 46); }
+    .foot-row h3{
+        font-size: 30px; color: white; font-weight: bold; font-family: pbold; text-align: center; margin-top: 40px; margin-bottom: 20px;
+    }.foot-row span{color: rgb(252, 174, 97);}
+    #foot-nav{ display: flex; justify-content: center; margin: 0px 0; flex-direction: column;}
+    #foot-nav li{margin: 10px 0px;}
+    #foot-nav li a{color: white; font-size: 16px; font-family: preg; };
+
+    #foot-nav li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(36,47,81);
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    #foot-nav li a:hover::after{
+        width: 0%;
+    }
+    #foot-nav li a::after{
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: rgb(252, 174, 97);
+        display: block;
+        margin: auto;
+        transition: .5s;
+    }
+    #foot-nav li a:hover::after{
+        width: 0%;
+    }
+
+    #foot-icon{display: flex; justify-content: center; margin: 20px 0 30px 0;}
+    #foot-icon li{margin: 0 15px; font-size: 30px; color: rgb(39, 48, 67);}
+    #foot-icon li a{color: rgb(39, 48, 67);}
+
+    .foot-row p{text-align: center; margin-bottom: 30px;  font-size: 14px; color: rgba(255, 255, 255, 0.212); font-family: preg;}
+
+    .active-foot{
+        color: white;
+    }
+
+
+
+
+}
